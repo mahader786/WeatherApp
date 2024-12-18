@@ -36,7 +36,6 @@
         </div>
     </div>
 </div>
-
 <script>
   const apiKey = "acfee124197a4e87e699f33a2bf10ca9";
   const apiUrl = "https://api.openweathermap.org/data/2.5/weather";
@@ -53,7 +52,6 @@
         document.querySelector(".wind").innerHTML = `${data.wind.speed} m/s`;
     } else {
         console.error("Error: ", data.message);
-        alert("City not found!");
     }
   }
 
@@ -71,29 +69,5 @@
   checkWeather();
   
 </script>
-
-<script type="module">
-    // Import the functions you need from the SDKs you need
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-app.js";
-    import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-analytics.js";
-    // TODO: Add SDKs for Firebase products that you want to use
-    // https://firebase.google.com/docs/web/setup#available-libraries
-  
-    // Your web app's Firebase configuration
-    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-    const firebaseConfig = {
-      apiKey: "AIzaSyAqm8sbWQPm978GMXq194vWObhPOpts1ac",
-      authDomain: "weather-8d5f.firebaseapp.com",
-      projectId: "weather-8d5f",
-      storageBucket: "weather-8d5f.firebasestorage.app",
-      messagingSenderId: "807483657654",
-      appId: "1:807483657654:web:1e42fffa451cf506b4c517",
-      measurementId: "G-4WB1HTJG47"
-    };
-  
-    // Initialize Firebase
-    const app = initializeApp(firebaseConfig);
-    const analytics = getAnalytics(app);
-  </script>
 </body>
 </html>

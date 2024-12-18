@@ -49,6 +49,10 @@ button.search_icon{
     width: 50px;
     cursor: pointer;
 }
+button.search_icon:active{
+    background-color: lightgreen;
+    transition: 1ms;
+}
 
 .mainweather{
     width: 170px;
