@@ -99,6 +99,9 @@ button.search_icon:active{
     .search input {
         font-size: 14px;
         padding: 8px 10px;
+        border-radius: 30px;
+        border: 2px;
+        
     }
 
     .mainweather {
